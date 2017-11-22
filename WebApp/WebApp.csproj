@@ -166,10 +166,40 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711221721386_InitialModel-force.cs" />
+    <Compile Include="Migrations\201711221721386_InitialModel-force.Designer.cs">
+      <DependentUpon>201711221721386_InitialModel-force.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711221734186_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201711221734186_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201711221734186_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711221755430_AddMembershipType.cs" />
+    <Compile Include="Migrations\201711221755430_AddMembershipType.Designer.cs">
+      <DependentUpon>201711221755430_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711221801001_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201711221801001_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201711221801001_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711221812341_ApplyAnnotationToDatabase.cs" />
+    <Compile Include="Migrations\201711221812341_ApplyAnnotationToDatabase.Designer.cs">
+      <DependentUpon>201711221812341_ApplyAnnotationToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711222222070_UpdateMembershipType.cs" />
+    <Compile Include="Migrations\201711222222070_UpdateMembershipType.Designer.cs">
+      <DependentUpon>201711222222070_UpdateMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711222233557_UpdateCustomerDob.cs" />
+    <Compile Include="Migrations\201711222233557_UpdateCustomerDob.Designer.cs">
+      <DependentUpon>201711222233557_UpdateCustomerDob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -247,6 +277,29 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711221721386_InitialModel-force.resx">
+      <DependentUpon>201711221721386_InitialModel-force.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711221734186_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201711221734186_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711221755430_AddMembershipType.resx">
+      <DependentUpon>201711221755430_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711221801001_PopulateMembershipTypes.resx">
+      <DependentUpon>201711221801001_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711221812341_ApplyAnnotationToDatabase.resx">
+      <DependentUpon>201711221812341_ApplyAnnotationToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711222222070_UpdateMembershipType.resx">
+      <DependentUpon>201711222222070_UpdateMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711222233557_UpdateCustomerDob.resx">
+      <DependentUpon>201711222233557_UpdateCustomerDob.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
