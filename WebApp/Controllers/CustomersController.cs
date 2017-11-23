@@ -10,7 +10,7 @@ namespace WebApp.Controllers
 {
     public class CustomersController : Controller
     {
-        private ApplicationDbContext _context; // we need dbcontext to access the database
+       private ApplicationDbContext _context; // we need dbcontext to access the database
         public CustomersController()//initialize dbcontext in constructor
         {
             _context = new ApplicationDbContext();
@@ -23,8 +23,8 @@ namespace WebApp.Controllers
         }
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();//when this line is executed entity framwork in not going to query to DB (differed execution)
-                                                        //but after Tolist() query is executed from this line
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();//ToList();//when this line is executed entity framwork in not going to query to DB (differed execution)
+                                                        //but after Tolist() query is executed fromu this line
             return View(customers);
         }
 
@@ -38,7 +38,7 @@ namespace WebApp.Controllers
             return View(customer);
         }
 
-      /*  private IEnumerable<Customer> GetCustomers()  //hardcoded method for accessing data
+      /* private IEnumerable<Customer> GetCustomers()  //hardcoded method for accessing data
         {
             return new List<Customer>
             {

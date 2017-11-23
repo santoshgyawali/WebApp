@@ -7,13 +7,13 @@ namespace WebApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class UpdateMembershipType : IMigrationMetadata
+    public sealed partial class PopulateMembershipTypes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateMembershipType));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateMembershipTypes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201711222222070_UpdateMembershipType"; }
+            get { return "201711232036327_PopulateMembershipTypes"; }
         }
         
         string IMigrationMetadata.Source

@@ -13,7 +13,7 @@ namespace WebApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201711221734186_AddIsSubscribedToCustomer"; }
+            get { return "201711232032272_AddIsSubscribedToCustomer"; }
         }
         
         string IMigrationMetadata.Source
